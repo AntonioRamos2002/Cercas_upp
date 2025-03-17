@@ -1,0 +1,107 @@
+/* Define variables globales para la raíz del documento */
+:root {
+  /* Configuración de la fuente y su estilo */
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Esquema de color claro y oscuro */
+  color-scheme: light dark;
+  /* Color de texto con una opacidad del 87% */
+  color: rgba(255, 255, 255, 0.87);
+  /* Color de fondo oscuro */
+  background-color: #242424;
+
+  /* Mejora la legibilidad de la fuente */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Estilo para enlaces */
+a {
+  /* Peso de la fuente */
+  font-weight: 500;
+  /* Color del enlace */
+  color: #646cff;
+  /* Elimina el subrayado por defecto */
+  text-decoration: inherit;
+}
+
+/* Cambia el color al pasar el mouse sobre el enlace */
+a:hover {
+  color: #535bf2;
+}
+
+/* Estilo general del cuerpo de la página */
+body {
+  /* Elimina márgenes predeterminados */
+  margin: 0;
+  /* Usa flexbox para centrar contenido */
+  display: flex;
+  place-items: center;
+  /* Ancho mínimo de la página */
+  min-width: 320px;
+  /* Altura mínima que ocupa toda la pantalla */
+  min-height: 100vh;
+}
+
+/* Estilo para encabezados h1 */
+h1 {
+  /* Tamaño de fuente grande */
+  font-size: 3.2em;
+  /* Altura de línea ajustada */
+  line-height: 1.1;
+}
+
+/* Estilo para botones */
+button {
+  /* Bordes redondeados */
+  border-radius: 8px;
+  /* Borde transparente */
+  border: 1px solid transparent;
+  /* Espaciado interno */
+  padding: 0.6em 1.2em;
+  /* Tamaño de fuente */
+  font-size: 1em;
+  /* Peso de la fuente */
+  font-weight: 500;
+  /* Hereda la fuente del documento */
+  font-family: inherit;
+  /* Color de fondo oscuro */
+  background-color: #070505;
+  /* Cambia el cursor al pasar sobre el botón */
+  cursor: pointer;
+  /* Transición suave al cambiar el color del borde */
+  transition: border-color 0.25s;
+}
+
+/* Cambia el color del borde al pasar el mouse sobre el botón */
+button:hover {
+  border-color: #646cff;
+}
+
+/* Enfoque para accesibilidad */
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Estilo condicional para el esquema de color claro */
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Color de texto oscuro */
+    color: #213547;
+    /* Color de fondo blanco */
+    background-color: #111010;
+  }
+  /* Cambia el color del enlace al pasar el mouse */
+  a:hover {
+    color: #747bff;
+  }
+  /* Cambia el color de fondo del botón */
+  button {
+    background-color: #f9f9f9;
+  }
+}
